@@ -79,6 +79,8 @@ function sum(arr) {
   } return total;
 } */
 
+
+// Iteration #3.1 Bonus
 const mixedArr = [6, 12, 'miami', 1, 'barca', '200', 'lisboa', 8, 10];
 
 function sum(arr) {
@@ -118,11 +120,11 @@ console.log(averageNumbers(numbersAvg)); */
 
 const numbersAvg = [2, 6, 9, 10, 7, 4, 1, 9];
 
-function averageNumbers(numbersAvg) {
+function averageNumbers(arr) { 
   if(numbersAvg.length === 0) {
     return null
   }
- return sumNumbers(numbersAvg) / numbersAvg.length
+ return sumNumbers(arr) / numbersAvg.length //This sumNumbers is the one from 3#: Calculate the sum. We are reusing the function
 }
 
 
@@ -195,7 +197,7 @@ const wordsUnique = [
   'bring'
 ];
 
-function uniquifyArray(arr) {
+function uniquifyArray(arr) {  //If .indexOf the array equals -1 it means that the word doesn´t exist in the array. If the word exists then its index is different from -1.
   let uniqueArray = [];
   if(arr.length === 0) {return null} else {
     arr.forEach(function(value) {
