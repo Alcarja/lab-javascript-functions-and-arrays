@@ -10,7 +10,7 @@ function maxOfTwoNumbers(num1, num2) {
 // Iteration #2: Find longest word
 const words = ['mystery', 'brother', 'aviator', 'crocodile', 'pearl', 'orchard', 'crackpot'];
 
-function findLongestWord(words) {
+function findLongestWord(arr) {
   let longestWord = "";
 
   if(words.length === 0){
@@ -50,18 +50,6 @@ function sumNumbers(numbers) {
   return sum;
 }
   
-
-// Level 1: Array of numbers with .forEach()
-
-/* const numbers = [2, 6, 9, 10, 7, 4, 1, 9];
-function sumNumbers(arr) {
-  let sum = 0;
-  arr.forEach(function(num) {
-    sum += num
-  })
-  return sum;
-} */
-
 
 
 // Iteration #3.1 Bonus: This shit works in CodePen but Jasmine is a bitch.
